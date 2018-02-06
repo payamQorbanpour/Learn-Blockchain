@@ -139,8 +139,10 @@ def checkChain(chain):
 
 def show_chain(chain):
     print("\n\n----------------Current-Chain----------------\n")
+    end='\n\n'
+    sep=':\t'
     for i, block in enumerate(chain):
-        print(i,block, sep=':\t', end='\n\n')
+        print(i,block,sep,end)
     print("----------------End-of-Current-Chain----------------\n\n")
 
 def main():
